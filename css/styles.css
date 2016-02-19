@@ -1,0 +1,261 @@
+/**:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed pink;
+}*/
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 310px;
+}
+
+body {
+  background: black;
+  margin: 5px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 12px 0 8px 20px;
+  font-weight: normal;
+  font-family: 'Unica One', cursive;
+}
+
+header {
+  height: 100px;
+  background: #67271E;
+  color: white;
+  opacity: 0.8;
+  padding: 0 10px 0 20px;}
+
+nav {
+  background: #A75700;
+  padding-left: 20px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 8px 0;
+}
+
+nav ul li a {
+  padding: 8px 0;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: .8em;
+  font-family: 'Unica One', cursive;
+}
+
+.big-img-caption {
+  padding-left: 20px;
+  margin: 20px 0;
+  color: white;
+  font-family: 'Unica One', cursive;
+}
+
+.big-img-caption h1,
+.big-img-caption h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+}
+
+.espresso-img h1 {
+  color: lightgray;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Unica One', cursive;
+  padding: 0 0 2px 20px;
+  margin: 6px auto 0 auto;
+}
+
+.espresso-img h4 {
+  color: lightgray;
+  font: .8em normal;
+  font-family: sans-serif;
+  font-family: 'Unica One', cursive;
+  padding: 0 0 2px 20px;
+  margin: 0 auto 2px auto;
+}
+
+#shot {
+  background: white;
+}
+
+#shot img{
+  display: block;
+  width: 100%;
+  background: white;
+}
+
+main section a {
+  text-align: center;
+  color: lightgray;
+  background-color: black;
+  display: block;
+  font-family: monospace;
+  padding: 4px 0 4px 20px;
+  margin-bottom: 2px;
+}
+
+ .enjoy p {
+  font-family: 'Unica One', cursive;
+  color: lightgray;
+  font-size: .8em;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+
+.company-info p {
+  color: lightgray;
+  font-size: .8em;
+  font-family: monospace;;
+  font-weight: lighter;
+  line-height: 1.4em;
+  padding: 6px;
+  margin: 0 auto;
+}
+
+.enjoy img {
+  height: 2em;
+  /*background-color: white;*/
+}
+
+.enjoy p {
+  text-align: center;
+}
+
+.enjoy span {
+  color: #FFA500;
+  padding-left: 4px;
+}
+
+.enjoy a {
+  display: inline;
+  text-decoration: none;
+  color: darkorange;
+  padding: 0 0 4px 4px;
+}
+
+.enjoy a:hover {
+  text-decoration: underline;
+  color: #A75700;
+}
+/*.facebook a span {
+  background-color:white;
+  background-image: url('../img/fb2.png');
+  background-repeat: no-repeat;
+  margin: 0 20px;
+  height: 100%;
+}
+
+.twitter {
+  background-image: url('../img/twt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 20px;
+}*/
+
+
+
+footer {                 /* make sticky*/
+  color: white;
+  font-size: .6em;
+  font-weight: 200;
+  font-family: sans-serif;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+
+.main-content {
+  min-height: 400px;
+  background-color: red;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.left-column {
+  min-height: 150px;
+  background-color: yellow;
+  color: black;
+}
+
+.right-column {
+  min-height: 150px;
+  background-color: green;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .nav {
+  /*display: none;*/
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  opacity: .7;
+  }
+
+.company {
+  background: none;
+  padding-left: 15px;
+}
+
+  .main {
+    position: relative;
+    height: 800px;
+    width: 100%;
+  }
+
+  a {
+    display: none;
+  }
+  .right-column {
+    float: right;
+    height: 400px;
+    width: 49.5%;
+  }
+  .left-column {
+
+    float: left;
+    height: 400px;
+    width: 49.5%;
+  }
+@media screen and (min-width: 1100px) {
+  .nav {
+  /*display: none;*/
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 200px;
+  width: 200px;
+  }
+  .main {
+    float: left;
+    height: 1100px;
+    width: 66%;
+  }
+  a {
+    display: none;
+  }
+  .left-column {
+    float: right;
+    height: 548px;
+    width: 33%;
+  }
+  .right-column {
+    float: right;
+    height: 547px;
+    width: 33%;
+    margin-top: 5px;
+  }
+
+
+}
