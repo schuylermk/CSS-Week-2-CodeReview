@@ -96,22 +96,17 @@ nav ul li a {
   background: white;
 }
 
-main section a {
+.facebook a, .twitter a {
   text-align: center;
   color: lightgray;
   background-color: black;
   display: block;
   font-family: monospace;
   padding: 4px 0 4px 20px;
-  margin-bottom: 2px;
 }
 
- .enjoy p {
-  font-family: 'Unica One', cursive;
-  color: lightgray;
-  font-size: .8em;
-  font-weight: lighter;
-  margin: 0 auto;
+.twitter a {
+  margin-bottom: 12px;
 }
 
 .company-info p {
@@ -121,16 +116,30 @@ main section a {
   font-weight: lighter;
   line-height: 1.4em;
   padding: 6px;
+  margin: 0 auto 10px;;
+}
+
+ .enjoy p, .partners h2, .partners p {
+  font-family: 'Unica One', cursive;
+  color: lightgray;
+  font-size: .8em;
+  font-weight: lighter;
   margin: 0 auto;
-}
-
-.enjoy img {
-  height: 2em;
-  /*background-color: white;*/
-}
-
-.enjoy p {
   text-align: center;
+}
+
+.partners h2 {
+  font-size: 1.2em;
+}
+
+.partners p {
+  margin-top: 1em;
+}
+
+.enjoy img, .partners img {
+  margin-bottom: -30px;
+  padding-left: 50px;
+  height: 2em;
 }
 
 .enjoy span {
@@ -138,33 +147,18 @@ main section a {
   padding-left: 4px;
 }
 
-.enjoy a {
+.enjoy a, .partners a {
   display: inline;
   text-decoration: none;
   color: darkorange;
   padding: 0 0 4px 4px;
+  font-family: monospace;
 }
 
-.enjoy a:hover {
+.enjoy a:hover, .partners a:hover {
   text-decoration: underline;
   color: #A75700;
 }
-/*.facebook a span {
-  background-color:white;
-  background-image: url('../img/fb2.png');
-  background-repeat: no-repeat;
-  margin: 0 20px;
-  height: 100%;
-}
-
-.twitter {
-  background-image: url('../img/twt.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 20px;
-}*/
-
-
 
 footer {                 /* make sticky*/
   color: white;
@@ -173,25 +167,6 @@ footer {                 /* make sticky*/
   font-family: sans-serif;
   text-align: center;
   font-family: 'Unica One', cursive;
-}
-
-.main-content {
-  min-height: 400px;
-  background-color: red;
-  color: white;
-  margin-bottom: 5px;
-}
-
-.left-column {
-  min-height: 150px;
-  background-color: yellow;
-  color: black;
-}
-
-.right-column {
-  min-height: 150px;
-  background-color: green;
-  color: white;
 }
 
 @media screen and (min-width: 600px) {
@@ -259,3 +234,18 @@ footer {                 /* make sticky*/
 
 
 }
+
+/*.facebook a span {
+background-color:white;
+background-image: url('../img/fb2.png');
+background-repeat: no-repeat;
+margin: 0 20px;
+height: 100%;
+}
+
+.twitter {
+background-image: url('../img/twt.png');
+background-repeat: no-repeat;
+background-size: contain;
+margin: 0 20px;
+}*/
