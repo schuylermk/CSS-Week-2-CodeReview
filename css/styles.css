@@ -151,18 +151,29 @@ nav ul li a {
   text-align: center;
 }
 
+.enjoy p {
+  margin: 0;
+  padding: 0;
+}
+
+.enjoy img {
+  margin-bottom: -25px;
+  padding-left: 5px;
+  height: 2em;
+}
+
+.partners img {
+  margin-bottom: -30px;
+  padding-left: 50px;
+  height: 2em;
+}
+
 .partners h2 {
   font-size: 1.2em;
 }
 
 .partners p {
   margin-top: 1em;
-}
-
-.enjoy img, .partners img {
-  margin-bottom: -30px;
-  padding-left: 50px;
-  height: 2em;
 }
 
 .enjoy span {
@@ -201,10 +212,11 @@ footer {                 /* make sticky*/
 
   header {
   position: absolute;
-  top: 10vh;
-  left: 10vw;
-  opacity: .8;
+  top: 7vh;
+  left: 11vw;
+  /*opacity: .9;*/
   padding: 0 20px;
+  border: 1px solid black;
   }
 
   .wrapper1 img {
@@ -216,11 +228,11 @@ footer {                 /* make sticky*/
 
   .caption{
     position: absolute;
-    top: 55vh;
-    left: 53vw;
+    top: 64vh;
+    left: 58vw;
     background: brown;
     opacity: .6;
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .caption h4 {
@@ -229,7 +241,7 @@ footer {                 /* make sticky*/
 
   nav {
     padding: 0 10px;
-    opacity: 1.5;
+    opacity: 1.0;
   }
 
   nav ul li a {
@@ -255,8 +267,27 @@ footer {                 /* make sticky*/
   }
 
   .social h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Unica One', cursive;
+    font-weight: 100;
     background: black;
-    color: lightgray;
+    color: #A75700;
+    margin: 0 auto 30px;
+    padding-left: 20px;
+  }
+
+  .facebook a, .twitter a {
+    margin-top: -25px;
+    padding: 0 auto 0 30px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .twitter img, .facebook img {
+    width: 38px;
+    padding-left: 2em;
   }
 
   .company {
