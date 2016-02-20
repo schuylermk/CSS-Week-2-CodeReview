@@ -249,11 +249,15 @@ footer {                 /* make sticky*/
   }
 
   .social {
+    width: 45vw;
     position: absolute;
     top: 75vh;
   }
 
-
+  .social h1 {
+    background: black;
+    color: lightgray;
+  }
 
   .company {
   background: none;
