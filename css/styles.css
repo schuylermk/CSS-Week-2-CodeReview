@@ -15,6 +15,52 @@ body {
   margin: 20px;
 }
 
+.andrea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url('../img/andrea.jpg');
+  background-size: cover;
+  opacity: .5;
+}
+
+.varieties h2 {
+  color: white;
+  font-family: 'Unica One', cursive;
+  text-align: center;
+}
+
+.varieties h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+
+
+.varieties p {
+  color: white;
+  font-family: 'Unica One', cursive;
+  text-align: center;
+
+}
+
+.varieties a {
+  display: block;
+  text-decoration: none;
+  color: orange;
+  text-align: center;
+}
+
+.varieties img {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
 header h1 {
   margin: 0;
   padding: 12px 0 8px 20px;
@@ -107,11 +153,11 @@ nav ul li a:hover {
   background-color: #67271E;
 }
 
-.virtual a img {
+.social a img {
   display: inline;
 }
 
-.company-info p {
+.about p {
   background-color: #67271E;
   color: lightgray;
   opacity: .8;
@@ -176,36 +222,41 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 500px) {
-  .wrapper1 {
-    height: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: black;
+  body {
+    margin: 0;
+    background: white;
   }
 
   header {
   position: absolute;
-  top: 7vh;
-  left: 11vw;
+  top: 5vh;
+  left: 7vw;
   /*opacity: .9;*/
-  padding: 0 20px;
+  padding: 0 10px;
   border: 1px solid black;
+  }
+
+  .wrapper1 {
+    position: relative;
+    height: 69vh;
+    margin-bottom: 1vh;
   }
 
   .wrapper1 img {
     display: block;
     width: 100vw;
-    height: 70vh;
+    height: 69vh;
     object-fit: cover;
   }
 
-  .caption{
+  .caption {
     position: absolute;
-    top: 64vh;
-    left: 58vw;
-    background: brown;
-    opacity: .6;
-    border: 1px solid black;
+    top: 57vh;
+    left: 50vw;
+    background: none;
+    opacity: .8;
+    border: none;
+    /*transform: rotate(-90deg);*/
   }
 
   .caption h4 {
@@ -222,95 +273,91 @@ nav ul li a:hover {
     padding: 0;
   }
 
-  nav ul li:last-child a{
+  nav ul li:last-child a {
     margin: 0;
   }
 
-  #shot {
-    display: block;
-    width: 100vw;
-    height: 40vh;
-    object-fit: cover;
+  main {
+    height: 30vh;
+    min-height: 250px;
+    z-index: 20;
+    overflow: hidden;
   }
 
-  .social {
-    width: 45vw;
-    position: absolute;
-    top: 75vh;
-  }
-
-  .social h1 {
-    display: block;
-    text-align: center;
-    font-size: 1.4em;
-    font-family: 'Unica One', cursive;
-    font-weight: 100;
-    background: black;
-    color: #A75700;
-    margin: 0 auto 30px;
-    padding-left: 20px;
-  }
-
-  .facebook a, .twitter a {
-    margin-top: -25px;
-    padding: 0 auto 0 30px;
-    text-align: center;
-    font-size: 1.2em;
-  }
-
-  .twitter img, .facebook img {
-    width: 38px;
-    padding-left: 2em;
-  }
-
-  .company {
-  background: none;
-  padding-left: 15px;
-  }
-
-@media screen and (min-width: 1100px) {
-  .nav {
-  /*display: none;*/
-  position: relative;
-  top: 5px;
-  left: 5px;
-  height: 200px;
-  width: 200px;
-  }
-  .main {
-    float: left;
-    height: 1100px;
-    width: 66%;
-  }
-  a {
+  .social, .enjoy {
     display: none;
   }
-  .left-column {
-    float: right;
-    height: 548px;
-    width: 33%;
-  }
-  .right-column {
-    float: right;
-    height: 547px;
-    width: 33%;
-    margin-top: 5px;
+
+  .about {
+    display: inline-block;
+    float: left;
+    background: black;
+    width: 49%;
+    height: 100%;
+    padding: 0 1%;
   }
 
+  .partners {
+    display: inline-block;
+    float: right;
+    background: black;
+    width: 49%;
+    height: 100%;
+    padding: 0 1%;
+  }
 
+  .partners p, .about p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: lightgray;
+    background: none;
+  }
+
+  .partners {
+    margin-top: 0;
+  }
+
+  .partners p {
+    margin: -40px 0 0 0;
+    padding: 0;
+
+  }
+
+@media screen and (min-width: 1000px) {
+  .wrapper1 {
+    width: 70vw;
+    height: 100vh;
+    display: block;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .caption h1, .caption h4 {
+    color: black;
+  }
+
+  main {
+    width: 28.5vw;
+    height: 100vh;
+    display: block;
+    float: right;
+  }
+
+  .about, .partners {
+    height: 49.5vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about {
+    margin-bottom: 1.5vh;
+  }
+
+  .wrapper1 img {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
 }
-
-/*.facebook a span {
-background-color:white;
-background-image: url('../img/fb2.png');
-background-repeat: no-repeat;
-margin: 0 20px;
-height: 100%;
-}
-
-.twitter {
-background-image: url('../img/twt.png');
-background-repeat: no-repeat;
-background-size: contain;
-margin: 0 20px;
-}*/
